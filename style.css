@@ -5,7 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     font-family: 'Poppins', sans-serif;
+    font-size: '600';
 }
 
 body {
@@ -13,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f2f2f2;
+    background: #838383;
 
 }
 
@@ -22,7 +24,7 @@ section .card .image {
     width: 140px;
     border-radius: 50%;
     padding: 3px;
-    background: #79ff4d;
+    background: #2e2e2e;
 }
 
 section .card .image img {
@@ -34,6 +36,42 @@ section .card .image img {
 }
 
 .card {
+    position: relative;
     background: #fff;
     border-radius: 20px;
+    margin: 20px;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    background: #2e2e2e;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+
+.card .media-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .media-icons i {
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 25px;
 }
