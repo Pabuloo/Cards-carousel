@@ -24,7 +24,7 @@ section .card .image {
     width: 140px;
     border-radius: 50%;
     padding: 3px;
-    background: #2e2e2e;
+    background: #5c1585;
 }
 
 section .card .image img {
@@ -40,6 +40,7 @@ section .card .image img {
     background: #fff;
     border-radius: 20px;
     margin: 20px;
+    width: 280px;
 }
 
 .card::before{
@@ -47,7 +48,7 @@ section .card .image img {
     position: absolute;
     height: 55%;
     width: 100%;
-    background: #2e2e2e;
+    background: #5c1585;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -73,5 +74,41 @@ section .card .image img {
 .card .media-icons i {
     color: #fff;
     opacity: 0.6;
-    margin-top: 25px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .media-icons i:hover  {
+    opacity: 1;
+}
+
+.card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+.name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name-profession .profession {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card .rating i {
+    font-size: 18px;
+    margin: 0 2px;
+    color: #5c1585 ;
 }
