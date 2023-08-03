@@ -42,6 +42,10 @@ section .card .image img {
     border-radius: 20px;
     margin: 20px;
     width: 280px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .card::before{
@@ -139,9 +143,29 @@ section .card .image img {
 
 .mySwiper {
     width: 500px;
+    display: flex;
 }
 
-element.style {
-    width: 500px;
-    margin-right: 30px;
+.swiper-slide-active {
+    max-width: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slide-prev, .swiper-slide {
+    max-width: 100%;
+    margin: auto;
+    padding: 0px;
+}
+
+div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    visibility: hidden;
+    margin: auto;
+    padding: 0px;
+}
+
+.swiper-slide.card.swiper-slide-active {
+    margin: auto;
+    padding: 0px;
 }
