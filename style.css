@@ -142,8 +142,9 @@ section .card .image img {
 }
 
 .mySwiper {
-    width: 500px;
+    max-width: 360px;
     display: flex;
+    margin: 30px;
 }
 
 .swiper-slide-active {
